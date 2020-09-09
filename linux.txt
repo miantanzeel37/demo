@@ -1,0 +1,22 @@
+install centos
+clear			// To clear everything
+yum clean all		// To check if yum working
+yum update all		// To update in centos if any of update available
+yum group list		// To check if development tool already installed
+yum group list ids	// To list all pre installed tools
+yum group install "Development Tools" // To install all development tools
+whereis gcc		// To locate path of gcc
+gcc --version		// To check version of gcc
+pwd			// To identify current location
+cd Desktop		// To set current path to Desktop
+vim foo.c		// To create/edit file with name foo
+:wq!			// To save file
+
+Program for example in foo.c file:
+#include<stdio.h>
+int main(void){
+	print("Hello World");
+}
+
+cc foo.c -o foo		// To compile foo.c file
+./foo			// To run compiled file
